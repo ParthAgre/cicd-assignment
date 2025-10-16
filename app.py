@@ -7,7 +7,7 @@ app = Flask(__name__)
 @app.route('/')
 def hello_world():
     """This function runs when someone visits the main page."""
-    return 'Hi! The CI/CD pipeline is working!'
+    return 'Hi! The CI/CD pipeline is working automatically!'
 
 # This block runs the app when the script is executed directly
 if __name__ == '__main__':
