@@ -18,8 +18,9 @@ pipeline {
         stage('Checkout Code') {
             steps {
                 echo "Cloning the repository..."
-                // This step clones the source code from your Git repository.
-                git 'https://github.com/ParthAgre/cicd-assignment.git'
+                // --- FIX IS HERE ---
+                // We've added branch: 'main' to be explicit.
+                git branch: 'main', url: 'https://github.com/ParthAgre/cicd-assignment.git'
             }
         }
 
